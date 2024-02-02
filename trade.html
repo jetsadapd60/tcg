@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trade.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <div>
+                <img class="hero__brand-logo" src="./images/brand-logo.svg" alt="">
+            </div>
+            <div>
+                <p class="hero__company-nameEn">THAICHAROEN GOLDSMITH</p>
+                <p class="hero__company-nameTh">บริษัท ไทยเจริญ โกลด์สมิท จำกัด</p>
+            </div>
+            <div class="hero__footer">
+                <img src="./images/foot-hero.svg" alt="">
+                <div class="hero__menu">
+                    <div class="hero__tab-top"></div>
+                    <div class="hero__tab-center">
+                        <div class="link active" onclick="handleClick(this)">
+                            <img src="./images/twin-arrow-icon.svg" alt="">
+                            <span>Buy/Sell</span>
+                        </div>
+                        <div class="link" onclick="handleClick(this)">
+                            <img src="./images/folder-icon.svg" alt="">
+                            <span>Portfolio</span>
+                        </div>
+                        <div class="link" onclick="handleClick(this)">
+                            <img src="./images/exit-icon.svg" alt="">
+                            <span>Logout</span>
+                        </div>
+                    </div>
+                    <div class="hero__tab-bottom"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__content">
+            ss
+            
+        </div>
+    </div>
+    
+    <script>
+
+        function handleClick(clickedElement) {
+            // Remove 'active' class from all links
+            const allLinks = document.querySelectorAll('.link');
+            allLinks.forEach(link => link.classList.remove('active'));
+
+            // Add 'active' class to the clicked link
+            clickedElement.classList.add('active');
+
+            // Add your custom logic or actions here
+            // For example, you can get the text content of the clicked link
+            const linkText = clickedElement.querySelector('span').textContent;
+            console.log(`Clicked on: ${linkText}`);
+        }
+
+    </script>
+</body>
+</html>

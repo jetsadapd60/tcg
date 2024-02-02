@@ -1,6 +1,8 @@
 
 
 function main() {
+
+
     let isSlash = false;
     const eyeIcon = document.querySelector('#eye-icon');
     const inputPassword = document.querySelector('#input-password');

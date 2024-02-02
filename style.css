@@ -14,10 +14,7 @@ body {
 }
 
 .body-background {
-  background: var(
-    --GD-PINK4,
-    linear-gradient(180deg, #dec3b9 0%, rgba(222, 195, 185, 0.2) 100%)
-  );
+  background: linear-gradient(180deg, #dec3b9 0%, rgba(222, 195, 185, 0.2) 100%);
   overflow: hidden;
 }
 
@@ -109,7 +106,7 @@ body {
   padding: 12px 0px 11.923px 16px;
 
   border-radius: 6px;
-  border: 1px solid var(--Gold, #b37f2c);
+  border: 1px solid #b37f2c;
   background: var(--Surface-Primary-Surface, #fff);
 }
 
