@@ -104,10 +104,15 @@ body {
   width: 100%;
   height: 53.923px;
   padding: 12px 0px 11.923px 16px;
-
+  
+  background: 
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(45deg, #B37F2C, #B37F2C, #F8DE7C, #FFF2A6, #F8DE7C, #B37F2C) border-box;
+  padding: 10px;
+  border: 2px solid transparent;
   border-radius: 6px;
-  border: 1px solid #b37f2c;
-  background: var(--Surface-Primary-Surface, #fff);
+
+
 }
 
 .login__input:focus-visible {
