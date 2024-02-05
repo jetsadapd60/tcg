@@ -16,6 +16,8 @@ body {
 .body-background {
   background: linear-gradient(180deg, #dec3b9 0%, rgba(222, 195, 185, 0.2) 100%);
   overflow: hidden;
+
+  position: relative;
 }
 
 
@@ -111,8 +113,6 @@ body {
   padding: 10px;
   border: 2px solid transparent;
   border-radius: 6px;
-
-
 }
 
 .login__input:focus-visible {
@@ -154,6 +154,19 @@ body {
     height: 150px;
     max-height: 256px;
     z-index: 1;
+}
+
+.copyright {
+  width: 100%;
+  /* border: 1px solid red; */
+  text-align: center;
+  color: #534D4E;
+  font-size: 18px;
+
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  z-index: 99;
 }
 
 @media screen and (min-width: 1441px) {
